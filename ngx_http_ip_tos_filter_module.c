@@ -24,7 +24,7 @@ static ngx_int_t ngx_http_ip_tos_init(ngx_conf_t *cf);
 static ngx_command_t  ngx_http_ip_tos_commands[] = {
 
     { ngx_string("ip_tos"),
-      NGX_HTTP_MAIN_CONF|NGX_HTTP_SRV_CONF|NGX_HTTP_LOC_CONF|NGX_CONF_FLAG,
+      NGX_HTTP_MAIN_CONF|NGX_HTTP_SRV_CONF|NGX_HTTP_LOC_CONF|NGX_CONF_FLAG|NGX_HTTP_LIF_CONF,
       ngx_http_ip_tos,
       NGX_HTTP_LOC_CONF_OFFSET,
       0,
